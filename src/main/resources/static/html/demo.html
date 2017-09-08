@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WebSocket Demo</title>
+    <style>
+        .h1 {
+            text-shadow: 10px 10px 10px coral;
+        }
+        .border {
+            border: solid coral;
+            padding: 10px;
+            background: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+<h1 class="h1">Welcome</h1>
+<p class="border">
+    Reference: <br>
+    <a href="http://www.cnblogs.com/bianzy/p/5822426.html">spring boot Websocket（使用笔记）</a>
+</p>
+<hr>
+<div id="message">
+    <input id="text"/>
+    <button onclick="send()">SEND</button>
+    <button onclick="closeWebSocket()">ClOSE</button>
+</div>
+
+<script src="../js/demo.js"></script>
+</body>
+</html>
