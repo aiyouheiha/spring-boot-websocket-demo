@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+    <!-- 使用远程js可能存在，远程连接超时，导致本可以正常访问的页面无法顺利加载的情况 -->
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>-->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<div class="div">
+    <form action="http://localhost:8080/demo/add" method="get">
+        <input class="input" name="params" placeholder="Input values wanna add, split by [,]"><br>
+        <button class="button" type="submit">Sum</button>
+    </form>
+</div>
+<div class="div hello_div">
+    <!-- 此处button用于触发jquery对应的get/ajax请求，所以不要设定为form + submit提交表单的形式，否则无法顺利发送请求 -->
+    <button id="hello_button_1" class="button">Hello World 1</button>
+    <button id="hello_button_2" class="button">Hello World 2</button>
+    <button id="hello_button_3" class="button">Hello Message</button>
+</div>
+</body>
+</html>
