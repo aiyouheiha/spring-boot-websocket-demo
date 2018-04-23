@@ -14,7 +14,7 @@ websocket.onerror = function(){
 
 // 连接成功建立的回调方法
 websocket.onopen = function(event) {
-    alert("Connected");
+    console.log("connected");
 };
 
 // 接收到消息的回调方法
