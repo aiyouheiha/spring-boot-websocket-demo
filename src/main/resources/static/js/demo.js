@@ -15,22 +15,22 @@ websocket.onerror = function(){
 // 连接成功建立的回调方法
 websocket.onopen = function(event) {
     alert("Connected");
-}
+};
 
 // 接收到消息的回调方法
 websocket.onmessage = function(event) {
     setMessageInnerHTML(event.data);
-}
+};
 
 // 连接关闭的回调方法
 websocket.onclose = function(){
     alert("Closed");
-}
+};
 
 // 监听窗口关闭事件，当窗口关闭时，主动关闭websocket连接
 window.onbeforeunload = function(){
     websocket.close();
-}
+};
 
 // 将消息显示在网页上
 function setMessageInnerHTML(innerHTML){
