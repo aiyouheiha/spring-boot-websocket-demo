@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>WebSocket Demo</title>
@@ -28,6 +28,6 @@
     <button onclick="closeWebSocket()">ClOSE</button>
 </div>
 
-<script src="../js/demo.js"></script>
+<script th:src="@{/js/demo.js}"></script>
 </body>
 </html>
