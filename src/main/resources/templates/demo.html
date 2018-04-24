@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>WebSocket Demo</title>
+
+    <script th:src="@{/js/jquery-3.2.1.min.js}"></script>
+
     <style>
         .h1 {
             text-shadow: 10px 10px 10px coral;
@@ -23,9 +26,10 @@
 </p>
 <hr>
 <div id="message">
-    <input id="text"/>
+    <input id="text" placeholder="Input message to be sent"/>
     <button onclick="send()">SEND</button>
     <button onclick="closeWebSocket()">ClOSE</button>
+    <button onclick="connectWebSocket()">CONNECT</button>
     <div>
         Status: <label id="status-label"></label>
     </div>
